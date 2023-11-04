@@ -38,7 +38,7 @@ const Home = () => {
 
    function handleAddToCart(product){
     dispatch(addToCart(product))
-    alert("added to cart")
+    alert("Added to cart")
    }
  
 

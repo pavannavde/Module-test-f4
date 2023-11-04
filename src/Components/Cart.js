@@ -15,7 +15,7 @@ const Cart = () => {
     function handleRemoveCart(id){
         dispatch(removeFromCart(id));
     }
-
+    
     return(
         <div className="cart">
               <h1>My Cart</h1>
@@ -57,6 +57,7 @@ const Cart = () => {
                     <p>{cartItem.reduce((acc,curr)=>acc+curr.price,0)}$</p>
                 </div>
                  <button onClick={()=>dispatch(checkOut())}>Checkout</button>
+                
               </div>
 
               </div>
