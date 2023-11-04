@@ -33,7 +33,7 @@ const Home = () => {
    useEffect(() => { 
 
            getData();
-   },[])
+   })
 
    function handleAddToCart(product){
     dispatch(addToCart(product))
